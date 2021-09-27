@@ -1,0 +1,136 @@
+@import './variables.scss';
+
+.documents{
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+    min-height: 10vh;
+
+    .search-section{
+        width: 55%;
+        background-color: white;
+        border-radius: 4px;
+        margin-right: 8px;
+
+        .search-input{
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+
+            div{
+                display: flex;
+            }
+
+            .filter-button{
+                cursor: pointer;
+                padding-left: 30px;
+                            
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 36px;
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+
+                color: $base-color;
+            }
+
+            .count-number{
+                font-size: 13px;
+                line-height: 17px;
+                display: flex;
+                align-items: center;
+                text-align: right;
+            }
+        }
+
+        .search-table{
+            padding: 6px;
+
+            table{
+                width: 100%;
+                border-spacing: 0;
+                border-collapse: collapse;
+            }
+
+            tbody{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+
+                color: #000000;
+
+                td{
+                    padding: 8px;
+                    min-width: 51px;
+                }
+            }
+
+            thead{
+                th{
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #BDBDBD;
+                    direction: rtl;
+                }
+            }
+
+            tr{
+                &.selected-row{
+                    border: 1px solid $secondary-color;
+                }
+            }
+
+            tr:nth-child(even) {
+                background-color: white;
+            }
+
+            tr:nth-child(odd) {
+                background-color: #F1F3F8;
+                border-radius: 4px;
+            }
+
+            td:first-child { border-top-left-radius: 4px; }
+            td:last-child { border-top-right-radius: 4px; }
+            td:first-child { border-bottom-left-radius: 4px; }
+            td:last-child { border-bottom-right-radius: 4px; }
+        }
+
+        .no-results{
+            min-height: 50vh;
+            text-align: center;
+            padding-top: 32px;
+
+            .text{
+                padding-top: 42px;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 24px;
+                color: #BDBDBD;
+            }
+        }
+    }
+
+    .documents-content{
+        background-color: white;
+        border-radius: 4px;
+        width: 45%;
+
+        .selected-document{
+            padding: 32px;
+        }
+
+        .no-selected-document{
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 24px;
+            color: #BDBDBD;
+            padding: 32px;
+        }
+    }
+}

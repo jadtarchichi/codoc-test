@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+@font-face {
+    font-family: "Assistant";
+    src: url("../font/Assistant/Assistant-Regular.ttf");
+}
+
+body{
+    margin: 0;
+    font-family: "Assistant";
+}

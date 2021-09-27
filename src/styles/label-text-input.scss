@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+.label-text-input{
+    padding: 4px 0;
+
+    .label{
+        min-height: 36px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: $base-color;
+    }
+
+    .input{
+        background: #FFFFFF;
+        padding: 10px 12px;
+
+        border: 1px solid #BDBDBD;
+        box-sizing: border-box;
+        border-radius: 4px;
+        outline: none;
+        width: 100%;
+    }
+}

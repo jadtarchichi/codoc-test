@@ -1,0 +1,53 @@
+@import './variables.scss';
+
+.cohorts{
+    min-height: 80vh;
+    padding: 1% 13%;
+    background-color: #F1F3F8;
+
+    .path{
+        display: flex;
+    }
+
+    .path div{
+        font-size: 16px;
+        color: #233C73;
+        display: flex;
+
+        .back-slash{
+            padding: 0 12px;
+        }
+    }
+
+    .patient-title{
+        padding-top: 16px;
+        display: flex;
+        justify-content: space-between;
+
+        .name{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            color: #212529;
+            
+            .first-name{
+                text-transform: capitalize;
+            }
+
+            .last-name{
+                text-transform: uppercase;
+            }
+        }
+
+        .info{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: right;
+            color: $base-color;
+            padding-top: 10px;
+        }
+    }
+}
